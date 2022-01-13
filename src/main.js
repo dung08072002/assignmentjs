@@ -1,6 +1,27 @@
 import Navigo from "navigo";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import HomePage from "./pages/home";
+import AboutPage from "./pages/about";
 
-const router = new Navigo("/");
+const router = new Navigo("/", { linksSelector: "a"});
+
+const render = (content) => {
+    document.getElementById("header").innerHTML = Header.print();
+    document.getElementById("content").innerHTML = content.print();
+    document.getElementById("footer").innerHTML = Footer.print();
+}
+
+router.on({
+    "/": () => {
+        render(HomePage.render());
+    },
+    "/about": () => {
+        render(AboutPage.render());
+    }
+})
+
+router.resolve(); //Kích hoạt router
 
 // router.on("/", function(){
 //     console.log('Home page');
@@ -8,21 +29,9 @@ const router = new Navigo("/");
 // router.on("about", function(){
 //     console.log('About page');
 // });
-
-router.on({
-    "/": () => {
-        console.log('Home page');
-    },
-    "/about": () => {
-        console.log('About page');
-    }
-})
-
-router.resolve();
-
 // //ES5
 // function Animal(color){
-//     this.color = color;
+    //     this.color = color;
 //     this.showInfor = function (){
 //         console.log(this.color);
 //     }
