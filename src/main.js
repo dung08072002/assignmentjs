@@ -1,5 +1,6 @@
 import Navigo from "navigo";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import AboutPage from "./pages/about";
 import DetailNewsPage from "./pages/detailNews";
 import HomePage from "./pages/home";
@@ -10,6 +11,8 @@ const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
     document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
+    document.getElementById("footer").innerHTML = Footer.render();
+
 };
 
 router.on({
