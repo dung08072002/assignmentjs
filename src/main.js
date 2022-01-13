@@ -5,6 +5,8 @@ import AboutPage from "./pages/about";
 import DetailNewsPage from "./pages/detailNews";
 import HomePage from "./pages/home";
 import NewsPage from "./pages/news";
+import SignIn from "./pages/signin";
+import SignUp from "./pages/signup";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -29,6 +31,12 @@ router.on({
         const { id } = data;
         print(DetailNewsPage.render(id));
     },
+    "/signin": () => {
+        print(SignIn.render());
+    },
+    "/signup": () => {
+        print(SignUp.render());
+    }
 });
 router.resolve(); //Kích hoạt router
 
