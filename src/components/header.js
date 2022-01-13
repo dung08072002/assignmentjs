@@ -1,27 +1,20 @@
-import Nav from "./nav";
-
 const Header = {
-    print(){
+    render() {
         return `
-                <header class="max-w-6xl mx-auto">
-                <div class="header-top bg-[#272f54]">
-                <a class="" href=""><img class="mx-auto p-5" src="https://picsum.photos/200/100" alt=""></a>
-                </div>
-                <div class="header-bottom bg-[#ca7802] flex justify-between px-10 py-5">
-                <div class="header-menu_list">
-                    ${Nav.print()   }
-                </div>
-                <div class="header-search">
-                    <form class="flex flex-nowrap" action="">
-                    <input type="text" class="mr-3">
-                    <input class="text-white bg-[#272f54] px-5" type="submit" value="Tìm kiếm">
-                    </form>
-                </div>
-                </div>
-            </header>
-            <!-- end header -->
+        <div class="bg-blue-800 py-4">
+        <a href="">
+          <img src="https://picsum.photos/150/40" alt="" class="mx-auto">
+        </a>
+      </div>
+      <div class="bg-orange-500">
+        <ul class="flex">
+          <li><a href="/" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Home </a></li>
+          <li><a href="/about" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">About</a></li>
+          <li><a href="/news" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">News</a></li>
+          <li><a href="/contact" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Contact</a></li>
+        </ul>
+      </div>
         `;
-    }
-}
-
+    },
+};
 export default Header;

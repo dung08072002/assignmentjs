@@ -1,12 +1,6 @@
 const Banner = {
-    print(){
-        return /*html*/ `
-        <div class="banner">
-          <img class="w-max" src="https://picsum.photos/2000/400" alt="">
-        </div>
-        <!-- end banner -->
-        `;
-    }
-}
-
+  render() {
+      return ` <img src="https://picsum.photos/1200/400" />`;
+  },
+};
 export default Banner;
