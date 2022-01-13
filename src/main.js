@@ -7,6 +7,9 @@ import HomePage from "./pages/home";
 import NewsPage from "./pages/news";
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
+//Admin
+import Dashboard from "./pages/admin/dashboard";
+import HeaderAdmin from "./components/admin/headerAdmin";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -14,7 +17,6 @@ const print = (content) => {
     document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
     document.getElementById("footer").innerHTML = Footer.render();
-
 };
 
 router.on({
@@ -36,6 +38,9 @@ router.on({
     },
     "/signup": () => {
         print(SignUp.render());
+    },
+    "/admin": () => {
+        print(Dashboard.render());
     }
 });
 router.resolve(); //Kích hoạt router

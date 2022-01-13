@@ -14,6 +14,7 @@ const Header = {
           <li><a href="" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Contact</a></li>
           <li><a href="/signin" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Sign in</a></li>
           <li><a href="/signup" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Sign up</a></li>
+          <li><a href="/admin" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Admin</a></li>
         </ul>
       </div>
         `;
