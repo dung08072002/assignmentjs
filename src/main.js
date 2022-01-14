@@ -17,6 +17,7 @@ const print = (content) => {
     document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
     document.getElementById("footer").innerHTML = Footer.render();
+    document.getElementById("admin-account") = HeaderAdmin.render();
 };
 
 router.on({
