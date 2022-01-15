@@ -1,23 +1,17 @@
 import Navigo from "navigo";
-import Header from "./components/header";
-import Footer from "./components/footer";
 import AboutPage from "./pages/about";
+import DashboardPage from "./pages/admin/dashboard";
+import AdminNewsPage from "./pages/admin/news";
+import AdminNewsAddPage from "./pages/admin/news/add";
 import DetailNewsPage from "./pages/detailNews";
 import HomePage from "./pages/home";
-import NewsPage from "./pages/news";
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
-//Admin
-import Dashboard from "./pages/admin/dashboard";
-import HeaderAdmin from "./components/admin/headerAdmin";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
 const print = (content) => {
-    document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
-    document.getElementById("footer").innerHTML = Footer.render();
-    document.getElementById("admin-account") = HeaderAdmin.render();
 };
 
 router.on({
@@ -27,12 +21,8 @@ router.on({
     "/about": () => {
         print(AboutPage.render());
     },
-    "/news": () => {
-        print(NewsPage.render());
-    },
-    "/news/:id": ({ data }) => {
-        const { id } = data;
-        print(DetailNewsPage.render(id));
+    "/news/:id": (value) => {
+        print(DetailNewsPage.render(value.data.id));
     },
     "/signin": () => {
         print(SignIn.render());
@@ -40,9 +30,15 @@ router.on({
     "/signup": () => {
         print(SignUp.render());
     },
-    "/admin": () => {
-        print(Dashboard.render());
-    }
+    "/admin/dashboard": () => {
+        print(DashboardPage.render())
+    },
+    "/admin/news": () => {
+        print(AdminNewsPage.render())
+    },
+    "/admin/news/add": () => {
+        print(AdminNewsAddPage.render())
+    },
 });
 router.resolve(); //Kích hoạt router
 
