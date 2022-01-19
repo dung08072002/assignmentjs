@@ -10,9 +10,9 @@ import SignUp from "./pages/signup";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
-const print = async (content) => {
-    document.getElementById("app").innerHTML = await content.render();
-};
+const print = async (content, id) => {
+    document.getElementById("app").innerHTML = await content.render(id);
+}
 
 router.on({
     "/": () => {
@@ -22,7 +22,7 @@ router.on({
         print(AboutPage);
     },
     "/news/:id": (value) => {
-        print(DetailNewsPage.render(value.data.id));
+        print(DetailNewsPage, value.data.id);
     },
     "/signin": () => {
         print(SignIn);
