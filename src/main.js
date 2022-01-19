@@ -53,25 +53,25 @@ router.resolve(); //Kích hoạt router
 // }
 // sum(a);
 
-const render = () => new Promise((resolve, reject) => {
-    setTimeout(() => {
-        try {
-            // connect den server thanh cong
-            resolve("Mang chua du lieu tu server");
-        } catch (error) {
-            reject("Loi ket noi");}
-        }, 3000);
-});
+// const render = () => new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         try {
+//             // connect den server thanh cong
+//             resolve("Mang chua du lieu tu server");
+//         } catch (error) {
+//             reject("Loi ket noi");}
+//         }, 3000);
+// });
 
-const printB = async () => {
-    try {
-        const result = await render();
-        console.log(result);
-    } catch (error) {
-        console.log(error);
-    }
-}
-printB();
+// const printB = async () => {
+//     try {
+//         const result = await render();
+//         console.log(result);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// printB();
 
 /* API */
 
