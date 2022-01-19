@@ -10,37 +10,70 @@ import SignUp from "./pages/signup";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
-const print = (content) => {
-    document.getElementById("app").innerHTML = content;
+const print = async (content) => {
+    document.getElementById("app").innerHTML = await content.render();
 };
 
 router.on({
     "/": () => {
-        print(HomePage.render());
+        print(HomePage);
     },
     "/about": () => {
-        print(AboutPage.render());
+        print(AboutPage);
     },
     "/news/:id": (value) => {
         print(DetailNewsPage.render(value.data.id));
     },
     "/signin": () => {
-        print(SignIn.render());
+        print(SignIn);
     },
     "/signup": () => {
-        print(SignUp.render());
+        print(SignUp);
     },
     "/admin/dashboard": () => {
-        print(DashboardPage.render())
+        print(DashboardPage)
     },
     "/admin/news": () => {
-        print(AdminNewsPage.render())
+        print(AdminNewsPage)
     },
     "/admin/news/add": () => {
-        print(AdminNewsAddPage.render())
+        print(AdminNewsAddPage)
     },
 });
 router.resolve(); //Kích hoạt router
+
+//callback: ham được truyền vào một hàm khác như 1 tham số
+//
+// const a = 10;
+
+// function myFunction(){
+//     function sum(numberA){
+//         console.log(typeof numberA);
+//     };
+// }
+// sum(a);
+
+const render = () => new Promise((resolve, reject) => {
+    setTimeout(() => {
+        try {
+            // connect den server thanh cong
+            resolve("Mang chua du lieu tu server");
+        } catch (error) {
+            reject("Loi ket noi");}
+        }, 3000);
+});
+
+const printB = async () => {
+    try {
+        const result = await render();
+        console.log(result);
+    } catch (error) {
+        console.log(error);
+    }
+}
+printB();
+
+/* API */
 
 // router.on("/", function(){
 //     console.log('Home page');

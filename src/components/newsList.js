@@ -1,8 +1,10 @@
-import data from "../data";
+// import data from "../data";
 
 const NewsList = {
     render() {
-        return /* html */`
+        return fetch("https://61e7a8b7e32cd90017acbbf2.mockapi.io/posts")
+            .then((response) => response.json())
+            .then((data) =>/* html */`
                 <div class="grid grid-cols-3 gap-5 mt-5">
                     ${data.map((post) => `
                             <div class="detail-content p-5 border-2 hover:">
@@ -27,7 +29,7 @@ const NewsList = {
                     
                 </div>
         
-        `;
+        `);
     },
 };
 export default NewsList;

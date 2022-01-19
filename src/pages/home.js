@@ -4,7 +4,7 @@ import Header from "../components/header";
 import NewsList from "../components/newsList";
 
 const HomePage = {
-    render() {
+    async render() {
         return /* html */`
             <div class="max-w-5xl mx-auto">
                 ${Header.render()}
@@ -12,7 +12,7 @@ const HomePage = {
                     ${Banner.render()}
                 </div>
                 <div>
-                    ${NewsList.render()}
+                    ${await NewsList.render()}
                 </div>
                 ${Footer.render()}
             </div>
