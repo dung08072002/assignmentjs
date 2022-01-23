@@ -9,6 +9,14 @@
             "dest": "/"
         },
         {
+            "src": "/signin",
+            "dest": "/"
+        },
+        {
+            "src": "/signup",
+            "dest": "/"
+        },
+        {
             "src": "/admin/dashboard",
             "dest": "/"
         }
