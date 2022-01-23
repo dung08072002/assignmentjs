@@ -1,5 +1,5 @@
 {
-    "routes":[
+    "routes": [
         {
             "src/": "/",
             "dest": "/"
@@ -7,7 +7,7 @@
         {
             "src": "/news",
             "dest": "/"
-        }
+        },
         {
             "src": "/admin/dashboard",
             "dest": "/"
