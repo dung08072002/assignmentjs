@@ -9,7 +9,7 @@ const SignUp = {
             Create account
             </h2>
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form id="sign-up" class="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" value="true">
             <div class="rounded-md shadow-sm -space-y-px">
                 <div>
