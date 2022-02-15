@@ -1,3 +1,5 @@
+/* eslint-disable no-alert */
+/* eslint-disable no-plusplus */
 let cart = [];
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
@@ -22,6 +24,7 @@ export const decreaseItemInCart = (id) => {
     currenProduct.quantity--;
     // nếu sản phẩm giảm nhỏ hơn 1 thì xóa
     if (currenProduct.quantity < 1) {
+        // eslint-disable-next-line no-alert
         const confirm = window.confirm("Bạn có muốn xóa sản phẩm này không?");
         if (confirm) {
             cart = cart.filter((item) => item.id !== currenProduct.id);
