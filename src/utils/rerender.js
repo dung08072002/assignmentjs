@@ -4,3 +4,5 @@ export const reRender = async (component, dom) => {
     }
     if (component.afterRender) await component.afterRender();
 };
+
+export default reRender;
