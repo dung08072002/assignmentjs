@@ -1,27 +1,24 @@
 import { signup } from "../api/user";
 
-const SignUp = {
-    async render() {
+const Signup = {
+    render(){
         return `
             <form id="formSignup">
-                <input type="text" placeholder="Username" id="username"/>
-                <input type="email"  placeholder="Email" id="email"/>
-                <input type="password"  placeholder="Password" id="password"/>
-                <button>Đăng ký</button>
+                <input type="email" id="email" placeholder="Your Email" class="border border-black" />
+                <input type="password" id="password" placeholder="Your password" class="border border-black" />
+                <button>Signup</button>
             </form>
-        `;
+        `
     },
-    afterRender() {
-        const formSignup = document.querySelector("#formSignup");
-        formSignup.addEventListener("submit", (e) => {
+    afterRender(){
+        const formSignup = document.querySelector('#formSignup');
+        formSignup.addEventListener('submit', function(e){
             e.preventDefault();
-            // call api
             signup({
-                username: document.querySelector("#username").value,
-                email: document.querySelector("#email").value,
-                password: document.querySelector("#password").value,
-            });
-        });
-    },
-};
-export default SignUp;
+                email: document.querySelector('#email').value,
+                password: document.querySelector('#password').value
+            })
+        })
+    }
+}
+export default Signup;
