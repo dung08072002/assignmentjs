@@ -40,17 +40,17 @@ router.on("/admin/*", () => {}, {
 router.on({
     "/": () => print(HomePage),
     "/about": () => print(AboutPage),
+    "/signup": () => print(Signup),
+    "/signin": () => print(Signin),
+    "/cart": () => print(CartPage),
     // News
     "/news": () => print(NewsPage),
     "/news/:id": ({ data }) => print(DetailNewsPage, data.id),
-    // Product
+    // Products
     "/products": () => print(ProductsPage),
     "/products/:id": ({ data }) => print(DetailProductsPage, data.id),
     // Admin
     "/admin/news/add": () => print(AddPost),
     "/admin/news": () => print(AdminPost),
-    "/signup": () => print(Signup),
-    "/signin": () => print(Signin),
-    "/cart": () => print(CartPage),
 });
 router.resolve();
