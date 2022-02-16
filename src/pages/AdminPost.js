@@ -1,6 +1,6 @@
-
+/* eslint-disable no-unused-vars */
+import swal from "sweetalert";
 import Banner from "../components/banner";
-import swal from 'sweetalert';
 import { reRender } from "../utils/rerender";
 import TablePost from "./tablePost";
 
@@ -27,8 +27,8 @@ const AdminPost = {
             </div>
         `;
     },
-    afterRender(){
+    afterRender() {
         TablePost.afterRender();
-    }
+    },
 };
 export default AdminPost;

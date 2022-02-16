@@ -16,8 +16,8 @@ const HomePage = {
             </div>
         `;
     },
-    afterRender(){
+    afterRender() {
         Header.afteRender();
-    }
+    },
 };
 export default HomePage;

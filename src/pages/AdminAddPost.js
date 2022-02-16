@@ -1,12 +1,12 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
 import { add } from "../api/posts";
 import Banner from "../components/banner";
-import { reRender } from '../utils/rerender'
+import { reRender } from "../utils/rerender";
 import TablePost from "./tablePost";
 
 const AddPost = {
     async render() {
-
         return /* html */`
             <div class="banner">
                 ${Banner.render()}
@@ -34,14 +34,14 @@ const AddPost = {
             </div>
         `;
     },
-    afterRender(){
-        const formAdd = document.querySelector('#form-add-post');
-        const imgPost = document.querySelector('#img-post');
+    afterRender() {
+        const formAdd = document.querySelector("#form-add-post");
+        const imgPost = document.querySelector("#img-post");
 
         const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/ecommercer2021/image/upload";
         const CLOUDINARY_PRESET = "jkbdphzy";
 
-        formAdd.addEventListener('submit', async (e) => {
+        formAdd.addEventListener("submit", async (e) => {
             e.preventDefault();
 
             // Lấy giá trị input file
@@ -49,24 +49,25 @@ const AddPost = {
 
             // append vào object formData
             const formData = new FormData();
-            formData.append('file', file);
-            formData.append('upload_preset', CLOUDINARY_PRESET)
-            
+            formData.append("file", file);
+            formData.append("upload_preset", CLOUDINARY_PRESET);
+
             // call api cloudinary
             const response = await axios.post(CLOUDINARY_API, formData, {
                 headers: {
-                    "Content-Type": "application/form-data"
-                }
-            })
+                    "Content-Type": "application/form-data",
+                },
+            });
             // call api thêm bài viết
             add({
-                "title": document.querySelector('#title-post').value,
-                "img": response.data.url,
-                "desc": document.querySelector('#desc-post').value
+                title: document.querySelector("#title-post").value,
+                img: response.data.url,
+                desc: document.querySelector("#desc-post").value,
             });
-            document.location.href="/#/admin/news";
+            document.location.href = "/#/admin/news";
+            // eslint-disable-next-line no-undef
             await reRender(AdminPost, "#app");
-        })
-    }
+        });
+    },
 };
 export default AddPost;

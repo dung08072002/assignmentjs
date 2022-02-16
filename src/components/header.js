@@ -1,4 +1,5 @@
-import { reRender } from '../utils/rerender';
+import { reRender } from "../utils/rerender";
+
 const Header = {
     render() {
         return `
@@ -14,27 +15,26 @@ const Header = {
           <li><a href="/#/news" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">News</a></li>
           <li><a href="/#/contact" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Contact</a></li>
         </ul>
-        ${localStorage.getItem('user') ? `
+        ${localStorage.getItem("user") ? `
             <ul class="flex space-x-4 items-center pr-4">
             <li class="flex items-center">Xin chào <span id="account-email" class="block px-4 py-3 text-white"></span></li>
             <li id="logout" class="cursor-pointer">Logout</li>
-          </ul>`: "" }
+          </ul>` : ""}
       </div>
         `;
     },
-    afteRender(){
-      const accountEmail = document.querySelector('#account-email');
-      if(accountEmail){
-        accountEmail.innerHTML = JSON.parse(localStorage.getItem('user')).email;  
-      }
-      const logout = document.querySelector('#logout');
-      if(logout){
-        logout.addEventListener('click', function(){
-          localStorage.removeItem('user');
-          reRender(Header, '#header');
-      })
-      }
-      
-    }
+    afteRender() {
+        const accountEmail = document.querySelector("#account-email");
+        if (accountEmail) {
+            accountEmail.innerHTML = JSON.parse(localStorage.getItem("user")).email;
+        }
+        const logout = document.querySelector("#logout");
+        if (logout) {
+            logout.addEventListener("click", () => {
+                localStorage.removeItem("user");
+                reRender(Header, "#header");
+            });
+        }
+    },
 };
 export default Header;

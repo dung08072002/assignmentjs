@@ -1,4 +1,5 @@
-import { getAll } from '../../api/products';
+import { getAll } from "../../api/products";
+
 const ProductsPage = {
     async render() {
         const { data } = await getAll();

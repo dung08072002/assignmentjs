@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-alert */
 import axios from "axios";
 import { getAll, remove } from "../api/posts";
 import { reRender } from "../utils/rerender";
 
 const TablePost = {
-    async render(){
+    async render() {
         const { data } = await getAll();
         return `
         ${data.map((post, index) => `
@@ -16,21 +18,21 @@ const TablePost = {
                 </td>
             </tr>
         `).join("")}
-        `
+        `;
     },
-    afterRender(){
-        const buttons = document.querySelectorAll('.btn');
-        buttons.forEach(btn => {
-            const id = btn.dataset.id;
-            btn.addEventListener('click', () => {
+    afterRender() {
+        const buttons = document.querySelectorAll(".btn");
+        buttons.forEach((btn) => {
+            const { id } = btn.dataset;
+            btn.addEventListener("click", () => {
                 const confirm = window.confirm("Are you sure??");
-                if(confirm){
+                if (confirm) {
                     remove(id).then(() => {
-                        reRender(TablePost, '#table-news');
-                    })
+                        reRender(TablePost, "#table-news");
+                    });
                 }
-            })
+            });
         });
-    }
-}
+    },
+};
 export default TablePost;
