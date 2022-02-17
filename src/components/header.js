@@ -23,11 +23,12 @@ const Header = {
       </div>
         `;
     },
-    afteRender() {
+    afterRender() {
         const accountEmail = document.querySelector("#account-email");
         if (accountEmail) {
             accountEmail.innerHTML = JSON.parse(localStorage.getItem("user")).email;
         }
+        // Log out
         const logout = document.querySelector("#logout");
         if (logout) {
             logout.addEventListener("click", () => {
