@@ -1,15 +1,21 @@
 import Navigo from "navigo";
-import AboutPage from "./pages/about";
+// Admin
 import AddPost from "./pages/AdminAddPost";
 import AdminPost from "./pages/AdminPost";
-import CartPage from "./pages/cart";
-import DetailNewsPage from "./pages/detailNews";
+// MainPage
 import HomePage from "./pages/home";
+import AboutPage from "./pages/about";
+import CartPage from "./pages/cart";
+// News
 import NewsPage from "./pages/news";
+import DetailNewsPage from "./pages/detailNews";
+// Products
 import ProductsPage from "./pages/products";
 import DetailProductsPage from "./pages/products/detail";
+// Signin & signup
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
+// Champion
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -49,6 +55,7 @@ router.on({
     // Products
     "/products": () => print(ProductsPage),
     "/products/:id": ({ data }) => print(DetailProductsPage, data.id),
+    // Champions
     // Admin
     "/admin/news/add": () => print(AddPost),
     "/admin/news": () => print(AdminPost),
