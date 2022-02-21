@@ -1,108 +1,139 @@
 {
-    "posts": [
-      {
-        "title": "Bai viet moi vua them 01",
-        "img": "https://picsum.photos/200/200",
-        "desc": "Mo ta san pham",
-        "id": "ZnsEWgz",
-        "postCateId": 1
-      },
-      {
-        "title": "bai viet 1",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644299077/tyoijrwtrdjvn6cncfhg.png",
-        "desc": "Noi dung bai viet 1",
-        "id": "k75NwB3",
-        "postCateId": 1
-      },
-      {
-        "title": "bai viet 2",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644299756/fw3bavsz4nvnhi1d92fa.png",
-        "desc": "Noi dung bai viet 2",
-        "id": "8XfVO3T",
-        "postCateId": 2
-      },
-      {
-        "title": "bai viet 3",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644300790/odydceuhm92lszqex9lc.png",
-        "desc": "12321321",
-        "id": "FpRwiRq",
-        "postCateId": 2
-      },
-      {
-        "title": "bai viet 3 clone",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644300790/odydceuhm92lszqex9lc.png",
-        "desc": "12321321",
-        "id": "FpRwiRq"
-      },
-      {
-        "title": "bai viet 4",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644300808/kiiqll0bhtnkqpta2dtf.png",
-        "desc": "Noi dung",
-        "id": "AsmVvlq"
-      },
-      {
-        "title": "bai viet 5",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301011/vwq1u5vqu2kt2mdcspcc.png",
-        "desc": "dasdasdsa",
-        "id": "euL4StT"
-      },
-      {
-        "title": "bai viet 6",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301048/fd4j8wctplhgzq5jlvr2.png",
-        "desc": "fdafafda",
-        "id": "AVrQSNa"
-      },
-      {
-        "title": "bai viet 7",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301162/blcvfxb5q9xoufft3eb3.png",
-        "desc": "sadsada",
-        "id": "_XqNC90"
-      },
-      {
-        "title": "bai viet 8",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301240/izvdj6w5qhfg2piyunp3.png",
-        "desc": "123131231",
-        "id": "SQyvTU6"
-      },
-      {
-        "title": "bai viet 9",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301290/zaq62osbdbfxzrb2nh4x.png",
-        "desc": "dsfa",
-        "id": "DNUmtQf"
-      },
-      {
-        "title": "bai viet 10",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301410/d1yabldl8sx3lno5ybva.png",
-        "desc": "dsada",
-        "id": "Lrerr78"
-      },
-      {
-        "title": "bai viet 11",
-        "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301494/tkpbjdd0lfrnda1w33md.png",
-        "desc": "dasdada",
-        "id": "TCppoM-"
-      }
-    ],
-    "postCates": [
-      { "id": 1, "name": "danh mục bài viết 1"},
-      { "id": 2, "name": "danh mục bài viết 2"}
-    ],
-    "products": [
-      {"id": "1", "name": "Product A", "price": "100"},
-      {"id": "2", "name": "Product B", "price": "200"},
-      {"id": "3", "name": "Product C", "price": "300"},
-      {"id": "4", "name": "Product D", "price": "400"}
-    ],
-    "users": [
-      {
-        "email": "admin@gmail.com",
-        "password": "$2a$10$jIjiXSV5MychwbDgC8L3LuBRqnMeFnD7aZx1jV4TKnENpVFxJ5/ca",
-        "id": 1
-      },
-      {
-        "email": "member@gmail.com",
-        "password": "$2a$10$iogXZ6tS9n1B7xZF6GxvT.wlrwXFrsVsbedbSKu0gIQG7LmxQQwuS",
-        "id": 2
-      }
-    ]
-  }
+  "postCates": [
+    {
+      "id": 1,
+      "name": "danh mục bài viết 1"
+    },
+    {
+      "id": 2,
+      "name": "danh mục bài viết 2"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Bai viet moi vua them 01",
+      "img": "https://picsum.photos/200/200",
+      "desc": "Mo ta san pham",
+      "id": "ZnsEWgz",
+      "postCateId": 1
+    },
+    {
+      "title": "bai viet 1",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644299077/tyoijrwtrdjvn6cncfhg.png",
+      "desc": "Noi dung bai viet 1",
+      "id": "k75NwB3",
+      "postCateId": 1
+    },
+    {
+      "title": "bai viet 2",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644299756/fw3bavsz4nvnhi1d92fa.png",
+      "desc": "Noi dung bai viet 2",
+      "id": "8XfVO3T",
+      "postCateId": 2
+    },
+    {
+      "title": "bai viet 3",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644300790/odydceuhm92lszqex9lc.png",
+      "desc": "12321321",
+      "id": "FpRwiRq",
+      "postCateId": 2
+    },
+    {
+      "title": "bai viet 3 clone",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644300790/odydceuhm92lszqex9lc.png",
+      "desc": "12321321",
+      "id": "FpRwiRq"
+    },
+    {
+      "title": "bai viet 4",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644300808/kiiqll0bhtnkqpta2dtf.png",
+      "desc": "Noi dung",
+      "id": "AsmVvlq"
+    },
+    {
+      "title": "bai viet 5",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301011/vwq1u5vqu2kt2mdcspcc.png",
+      "desc": "dasdasdsa",
+      "id": "euL4StT"
+    },
+    {
+      "title": "bai viet 6",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301048/fd4j8wctplhgzq5jlvr2.png",
+      "desc": "fdafafda",
+      "id": "AVrQSNa"
+    },
+    {
+      "title": "bai viet 7",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301162/blcvfxb5q9xoufft3eb3.png",
+      "desc": "sadsada",
+      "id": "_XqNC90"
+    },
+    {
+      "title": "bai viet 8",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301240/izvdj6w5qhfg2piyunp3.png",
+      "desc": "123131231",
+      "id": "SQyvTU6"
+    },
+    {
+      "title": "bai viet 9",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301290/zaq62osbdbfxzrb2nh4x.png",
+      "desc": "dsfa",
+      "id": "DNUmtQf"
+    },
+    {
+      "title": "bai viet 10",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301410/d1yabldl8sx3lno5ybva.png",
+      "desc": "dsada",
+      "id": "Lrerr78"
+    },
+    {
+      "title": "bai viet 11",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644301494/tkpbjdd0lfrnda1w33md.png",
+      "desc": "dasdada",
+      "id": "TCppoM-"
+    },
+    {
+      "title": "abcde",
+      "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645104597/jpieywvd8rc3naowx2dl.png",
+      "desc": "aaaaaaaaaaaa",
+      "id": "PHVFuHs"
+    }
+  ],
+  "productCates":[
+
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product A",
+      "price": "100"
+    },
+    {
+      "id": "2",
+      "name": "Product B",
+      "price": "200"
+    },
+    {
+      "id": "3",
+      "name": "Product C",
+      "price": "300"
+    },
+    {
+      "id": "4",
+      "name": "Product D",
+      "price": "400"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$jIjiXSV5MychwbDgC8L3LuBRqnMeFnD7aZx1jV4TKnENpVFxJ5/ca",
+      "id": 1
+    },
+    {
+      "email": "member@gmail.com",
+      "password": "$2a$10$iogXZ6tS9n1B7xZF6GxvT.wlrwXFrsVsbedbSKu0gIQG7LmxQQwuS",
+      "id": 2
+    }
+  ]
+}

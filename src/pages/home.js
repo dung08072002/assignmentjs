@@ -17,7 +17,7 @@ const HomePage = {
         `;
     },
     afterRender() {
-        Header.afteRender();
+        Header.afterRender();
     },
 };
 export default HomePage;

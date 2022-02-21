@@ -23,8 +23,10 @@
   },
   "dependencies": {
     "axios": "^0.25.0",
+    "jquery": "^3.6.0",
     "navigo": "^8.11.1",
     "sweetalert": "^2.1.2",
-    "toastr": "^2.1.4"
+    "toastr": "^2.1.4",
+    "validation": "^0.0.1"
   }
 }

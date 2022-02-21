@@ -3,7 +3,7 @@ import axios from "axios";
 import { add } from "../api/posts";
 import Banner from "../components/banner";
 import { reRender } from "../utils/rerender";
-import TablePost from "./tablePost";
+import AdminPost from "./AdminPost";
 
 const AddPost = {
     async render() {
@@ -38,8 +38,8 @@ const AddPost = {
         const formAdd = document.querySelector("#form-add-post");
         const imgPost = document.querySelector("#img-post");
 
-        const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/ecommercer2021/image/upload";
-        const CLOUDINARY_PRESET = "jkbdphzy";
+        const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/assigmentjsweb501/image/upload";
+        const CLOUDINARY_PRESET = "lwllsryx";
 
         formAdd.addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -65,7 +65,6 @@ const AddPost = {
                 desc: document.querySelector("#desc-post").value,
             });
             document.location.href = "/#/admin/news";
-            // eslint-disable-next-line no-undef
             await reRender(AdminPost, "#app");
         });
     },

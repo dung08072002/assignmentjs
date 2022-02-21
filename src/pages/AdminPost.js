@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 import swal from "sweetalert";
 import Banner from "../components/banner";

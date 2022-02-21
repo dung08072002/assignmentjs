@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { reRender } from "../utils/rerender";
 
 const Header = {
