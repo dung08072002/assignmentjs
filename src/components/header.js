@@ -38,7 +38,7 @@ const Header = {
     afterRender() {
         const accountEmail = document.querySelector("#account-email");
         if (accountEmail) {
-            accountEmail.innerHTML = JSON.parse(localStorage.getItem("user")).email;
+            accountEmail.innerHTML = JSON.parse(localStorage.getItem("user")).name;
         }
         // Log out
         const logout = document.querySelector("#logout");

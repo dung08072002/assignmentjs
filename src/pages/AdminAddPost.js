@@ -8,9 +8,6 @@ import AdminPost from "./AdminPost";
 const AddPost = {
     async render() {
         return /* html */`
-            <div class="banner">
-                ${Banner.render()}
-            </div>
             <div>
             <form action="" id="form-add-post">
                 <input type="text"

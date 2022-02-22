@@ -10,7 +10,7 @@ const Signin = {
         <form class="signin-create" id="formSignin" >
             <div class="relative-input">
                 <span class="absolute-text">EMAIL</span>
-                <input type="text" name="email" id="username" class="username placeholder_change" autocomplete="off">
+                <input type="text" name="email" id="email" class="username placeholder_change" autocomplete="off">
             </div>
             <div class="relative-input">
                 <span class="absolute-text">PASSWORD</span>
