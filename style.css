@@ -238,7 +238,7 @@ button {
     top: 0;
     bottom: 0;
     transition: all 0.3s ease;
-    background: url("../image/background-login/riot_desktop_background_2x.jpg");
+    background: url("https://res.cloudinary.com/assigmentjsweb501/image/upload/v1645496141/riot_desktop_background_2x_jblusr.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
@@ -250,7 +250,7 @@ button {
     left: 78px;
     top: 0;
     transition: all 0.3s ease;
-    background: url("../image/background-login/riot_desktop_background_2x.jpg");
+    background: url("https://res.cloudinary.com/assigmentjsweb501/image/upload/v1645496141/riot_desktop_background_2x_jblusr.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;

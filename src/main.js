@@ -5,7 +5,6 @@ import AdminPost from "./pages/AdminPost";
 import AdminEditPost from "./pages/AdminEditPost";
 // MainPage
 import HomePage from "./pages/home";
-import AboutPage from "./pages/about";
 import CartPage from "./pages/cart";
 // News
 import NewsPage from "./pages/news";
@@ -46,7 +45,6 @@ router.on("/admin/*", () => {}, {
 });
 router.on({
     "/": () => print(HomePage),
-    "/about": () => print(AboutPage),
     "/signup": () => print(Signup),
     "/signin": () => print(Signin),
     "/cart": () => print(CartPage),
