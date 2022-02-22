@@ -4,24 +4,35 @@ import { reRender } from "../utils/rerender";
 const Header = {
     render() {
         return `
-        <div class="bg-blue-800 py-4">
-        <a href="">
-          <img src="https://picsum.photos/150/40" alt="" class="mx-auto">
-        </a>
+      <header>
+      <div class="header_main">
+          <div class="logo_content">
+              <div class="logo al_i_center">
+                  <i class="fab fa-dyalog"></i>
+                  <div class="font_menu text_uppercase text_weight_white un_select">Daxua</div>
+              </div>
+          </div>
+          <div class="header_menu">
+              <ul>
+                  <li><a class="hover_border_effect_center un_select text_uppercase text_weight_white font_menu" href="/">home</a></li>
+                  <li><a class="hover_border_effect_center un_select text_uppercase text_weight_white font_menu" href="/#/news">news</a></li>
+                  <li><a class="hover_border_effect_center un_select text_uppercase text_weight_white font_menu" href="/#/products">products</a></li>
+                  <li><a class="hover_border_effect_center un_select text_uppercase text_weight_white font_menu" href="/#/about">about</a></li>
+                  <li><a class="hover_border_effect_center un_select text_uppercase text_weight_white font_menu" href="/">accessories</a></li>
+                  <li><a class="hover_border_effect_center un_select text_uppercase text_weight_white font_menu" href="/">sale</a></li>
+              </ul>
+          </div>
+          <div class="header_sign-in-up cart">
+              <a href="/cart" class="hover_border_effect_center un_select bor_none ol_none font_menu text_weight_white bg_none btn_show-cart"><i class="fas fa-shopping-cart"></i></a href="">
+              ${localStorage.getItem("user") ? `
+              <p id="account-email" class="hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white"></p>
+              <p id="logout" class="cursor-pointer hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">Log out</p>
+              ` : `<a href="/signin" class="hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">sign in</a>
+                   <a href="/signup" class="hover_border_effect_center un_select bor_none text_uppercase font_menu ol_none bg_none text_weight_white">registration</a>`
+}
+          </div>
       </div>
-      <div class="bg-orange-500 flex justify-between">
-        <ul class="flex">
-          <li><a href="/" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Home </a></li>
-          <li><a href="/#/about" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">About</a></li>
-          <li><a href="/#/news" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">News</a></li>
-          <li><a href="/#/contact" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Contact</a></li>
-        </ul>
-        ${localStorage.getItem("user") ? `
-            <ul class="flex space-x-4 items-center pr-4">
-            <li class="flex items-center">Xin chào <span id="account-email" class="block px-4 py-3 text-white"></span></li>
-            <li id="logout" class="cursor-pointer">Logout</li>
-          </ul>` : ""}
-      </div>
+  </header>
         `;
     },
     afterRender() {

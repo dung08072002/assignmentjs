@@ -16,7 +16,6 @@ import DetailProductsPage from "./pages/products/detail";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 // Champion
-import ChampionPage from "./pages/champions";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -57,7 +56,6 @@ router.on({
     "/products": () => print(ProductsPage),
     "/products/:id": ({ data }) => print(DetailProductsPage, data.id),
     // Champions
-    "/champions": () => print(ChampionPage),
     // Admin
     "/admin/news/add": () => print(AddPost),
     "/admin/news": () => print(AdminPost),
