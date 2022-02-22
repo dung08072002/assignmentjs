@@ -393,7 +393,7 @@ button {
 }
 /* Log in */
 .container_bg {
-    background: url("../image/background-login/riot_desktop_background_2x.jpg");
+    background: url("https://lolstatic-a.akamaihd.net/rso-login-page/3.2.12/assets/arcane_dsktp_centerAlignedCrd_BG_2x.jpg");
     background-attachment: fixed;
     position: relative;
     background-size: cover;
@@ -468,6 +468,7 @@ button {
     border-radius: 4px;
     padding: 10px;
     align-items: center;
+    background-color: #ededed;
 }
 .different_signin .facebook {
     background: #1877f2;
@@ -506,6 +507,7 @@ button {
     color: #fff;
     font-weight: 800;
     font-size: 18px;
+    width: 100%;
 }
 #btn-submit:hover {
     background-color: #bc252a;    
@@ -650,6 +652,10 @@ button {
     position: absolute;
     left: 10%;
     top: 100px;
+}
+.title-form {
+    font-size: 2em;
+    font-weight: 700;
 }
 .title_banner{
     color: #fff;

@@ -8,9 +8,6 @@ import TablePost from "./tablePost";
 const AdminPost = {
     async render() {
         return /* html */`
-            <div class="banner">
-                ${Banner.render()}
-            </div>
             <div>
                 <table class="w-full">
                     <thead>

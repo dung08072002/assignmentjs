@@ -1,4 +1,5 @@
 import Banner from "../components/banner";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import NewsList from "../components/newsList";
 
@@ -14,6 +15,7 @@ const HomePage = {
             <div>
                 ${await NewsList.render()}
             </div>
+            ${Footer.render()}
         `;
     },
     afterRender() {
