@@ -60,7 +60,7 @@ router.on({
     // Admin
     "/admin/news": () => print(AdminPost),
     "/admin/news/add": () => print(AddPost),
-    "/admin/news/edit": () => print(AdminEditPost),
+    "/admin/news/:id/edit": ({ data }) => print(AdminEditPost, data.id),
     "/admin/products": () => print(AdminProduct),
     "/admin/products/add": () => print(AddProduct),
 });

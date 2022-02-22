@@ -8,28 +8,6 @@ import AdminPost from "./AdminPost";
 const AddPost = {
     async render() {
         return /* html */`
-            <div>
-            <form action="" id="form-add-post">
-                <input type="text"
-                    id="title-post"
-                    class="border border-black"
-                    placeholder="Title post"
-                > 
-                <br />
-                <input type="file"
-                    id="img-post"
-                    class="border border-black"
-                    placeholder="Imager post"
-                > <br />
-                <textarea name="" 
-                    id="desc-post" 
-                    class="border border-black"
-                    cols="30" 
-                    rows="10"></textarea>
-                <button class="bg-blue-500 p-4 inline-block text-white">Thêm bài viết</button>
-            </form>
-            </div>
-
             <div class="sidebar">
             <div class="logo_content">
                 <div class="logo">
@@ -106,7 +84,7 @@ const AddPost = {
                     <span class="un_select wrong_signin-create"></span>
                 </div>
                 <div class="margin-b20 submit">
-                    <input type="submit" name="btn-submit" id="btn-submit" value="ADD">
+                    <button id="btn-submit" class="">ADD POST</button>
                 </div>
             </form>
             <div class="other_choose">
