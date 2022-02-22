@@ -4,7 +4,7 @@ const ProductsPage = {
     async render() {
         const { data } = await getAll();
         return `
-            <h1>Products Page</h1>
+            <h1>Hot Products</h1>
             <div class="grid grid-cols-3 gap-8">
                 ${data.map((post) => `
                     <div class="border p-4">

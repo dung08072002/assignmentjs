@@ -26,6 +26,7 @@ const Header = {
               <a href="/cart" class="hover_border_effect_center un_select bor_none ol_none font_menu text_weight_white bg_none btn_show-cart"><i class="fas fa-shopping-cart"></i></a href="">
               ${localStorage.getItem("user") ? `
               <p id="account-email" class="hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white"></p>
+              <a href="/admin/news" class="hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">manage</a>
               <p id="logout" class="cursor-pointer hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">Log out</p>
               ` : `<a href="/signin" class="hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">sign in</a>
                    <a href="/signup" class="hover_border_effect_center un_select bor_none text_uppercase font_menu ol_none bg_none text_weight_white">registration</a>`

@@ -8,22 +8,6 @@ import TablePost from "./tablePost";
 const AdminPost = {
     async render() {
         return /* html */`
-            <div>
-                <table class="w-full">
-                    <thead>
-                    <tr class="text-left">
-                        <th>STT</th>
-                        <th>Image</th>
-                        <th>Title</th>
-                        <th></th>
-                    </tr>
-                    <tbody id="table-news">
-                        ${await TablePost.render()}
-                    </tbody>
-                    </thead>
-                </table>
-            </div>
-
             <div class="sidebar">
             <div class="logo_content">
                 <div class="logo">
@@ -97,23 +81,14 @@ const AdminPost = {
                 <div class="users_table">
                     <table class="styled-table">
                         <thead>
-                            <th>ID</th>
-                            <th class="text_cap">post name</th>
+                            <th>Number</th>
+                            <th class="text_cap">post title</th>
                             <th class="text_cap">post image</th>
-                            <th class="text_cap">post description</th>
                             <th class="text_cap">post status</th>
-                            <th colspan="2">Action</th>
+                            <th colspan="3">Action</th>
                         </thead>
-                        <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td class="text_cap"></td>
-                                    <td><img src="" alt="" height="100" width="100" class="img-fluid img-user"></td>
-                                    <td></td>
-                                    <td class="text_cap check_active"></td>
-                                    <td class="update_user"><a href="">Update <i class="fas fa-wrench"></i></a></td>
-                                    <td class="delete_user"><a href="">Delete <i class="fas fa-trash-alt"></i></a></td>
-                                </tr>
+                        <tbody id="table-news">
+                            ${await TablePost.render()}
                         </tbody>
                         <tfoot>
                             <tr>

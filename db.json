@@ -25,30 +25,25 @@
       "title": "Renata Glasc Champion Spotlight",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645496354/pcwvaioiptxe7gdmh17b.jpg",
       "desc": "Listen to the official theme for Renata Glasc, the Chem-Baroness.",
-      "id": "B12_bdS"
+      "id": "B12_bdS",
+      "postCateId": 1
+    },
+    {
+      "title": "Cyberpop Smackdown | G&G Pass II Showcase - TFT",
+      "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645502227/zkmkqnw2gji5spdgvf3q.jpg",
+      "desc": "Discover PROJECT Abyssia, the Toxitorium, and high-tech Tactician variants in the new G&G Pass II+.",
+      "id": "QzqLN8B",
+      "postCateId": 1
     }
   ],
   "productCates": [],
   "products": [
     {
-      "id": "1",
-      "name": "Product A",
-      "price": "100"
-    },
-    {
-      "id": "2",
-      "name": "Product B",
-      "price": "200"
-    },
-    {
-      "id": "3",
-      "name": "Product C",
-      "price": "300"
-    },
-    {
-      "id": "4",
-      "name": "Product D",
-      "price": "400"
+      "name": "Snowboard Poro Figure",
+      "price": "35",
+      "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645567215/mjxxwhfkwif4b31po1ew.png",
+      "desc": "Bomb down the slope with the Snowboarder Poro figure and their trusty board.",
+      "id": "CEFVPoh"
     }
   ],
   "users": [

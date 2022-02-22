@@ -1,8 +1,10 @@
 import Navigo from "navigo";
 // Admin
-import AddPost from "./pages/AdminAddPost";
 import AdminPost from "./pages/AdminPost";
+import AddPost from "./pages/AdminAddPost";
 import AdminEditPost from "./pages/AdminEditPost";
+import AdminProduct from "./pages/AdminProduct";
+import AddProduct from "./pages/AdminAddProduct";
 // MainPage
 import HomePage from "./pages/home";
 import CartPage from "./pages/cart";
@@ -59,5 +61,7 @@ router.on({
     "/admin/news": () => print(AdminPost),
     "/admin/news/add": () => print(AddPost),
     "/admin/news/edit": () => print(AdminEditPost),
+    "/admin/products": () => print(AdminProduct),
+    "/admin/products/add": () => print(AddProduct),
 });
 router.resolve();
