@@ -19,8 +19,8 @@ const ProductsPage = {
                     <form action="" id="search" class="w-full">
                         <div class="formSearch">
                         <input type="text" id="name" class = "w-full border border-black rounded-xl px-3 py-1" placeholder = "Search..." autocomplete="off">
-                        <button class="h-5 w-5"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
+                        <button class="h-5 w-5 btn-search-pro"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                     </form>
                     <h5 class="un_select color_cate title_cate text_uppercase">category</h5>
                     <ul>
@@ -66,7 +66,7 @@ const ProductsPage = {
             ${Footer.render()}
         `;
     },
-    async afterRender() {
+    afterRender() {
         Header.afterRender();
     },
 };

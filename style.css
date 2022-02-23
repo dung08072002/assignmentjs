@@ -850,3 +850,6 @@ footer {
     display: flex;
     align-items: center;
 }
+.btn-search-pro {
+    margin-left: -30px;
+}
