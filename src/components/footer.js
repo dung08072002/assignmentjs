@@ -31,7 +31,7 @@ const Footer = {
         </div>
     </footer>
     <footer class="footer footer_2">
-        <span>copyright daxua 2021</span>
+        <span>copyright daxua 2022</span>
     </footer>
         `;
     },

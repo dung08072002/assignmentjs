@@ -8,14 +8,14 @@ const NewsList = {
         return /* html */`
             <div class="bg-white p-10">
             <h1 class="text-4xl font-extrabold">Hot News</h1>
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid grid-cols-3 gap-8 my-5">
                 ${data.map((post) => `
                     <div class="border p-4">
-                        <a href="/#/news/${post.id}">
+                        <a href="#">
                             <img src="${post.img}" alt="" />
                         </a>
-                        <h3 class="my-3"><a href="/#/news/${post.id}" class="font-semibold text-lg text-black font-bold">${post.title}</a></h3>                    
-                        <p>${post.desc}</p>
+                        <h3 class="my-3"><a href="#" class="font-semibold text-lg text-black font-bold">${post.title}</a></h3>                    
+                        <p class="truncate">${post.desc}</p>
                     </div>
                 `).join("")}
                 </div>

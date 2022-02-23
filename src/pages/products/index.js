@@ -1,20 +1,66 @@
 import { getAll } from "../../api/products";
+import Header from "../../components/header";
+import Banner from "../../components/banner";
+import Footer from "../../components/footer";
 
 const ProductsPage = {
     async render() {
         const { data } = await getAll();
         return `
-            <h1>Hot Products</h1>
-            <div class="grid grid-cols-3 gap-8">
-                ${data.map((post) => `
-                    <div class="border p-4">
-                        <h3 class="my-3"><a href="/#/products/${post.id}" class="font-semibold text-lg text-orange-500">${post.name}</a></h3>                    
-                        <p>${post.price}</p>
-                    </div>
-                `).join("")}
-                
+            <div id="header">
+                ${Header.render()}
             </div>
+            <div class="banner">
+                ${Banner.render()}
+            </div>
+            <main class="content">
+                <aside class="category">
+                    <h5 class="un_select color_cate title_cate text_uppercase">category</h5>
+                    <ul>
+                        <li class="mg_tb-10"><a class="un_select font_weight500 color_cate text_cate text_cap" href="#">figures</a></li>
+                        <li class="mg_tb-10"><a class="un_select font_weight500 color_cate text_cate text_cap" href="#">apparel</a></li>
+                    </ul>
+                    <div class="sort bor_top">
+                        <span class="un_select color_cate title_cate dis_block text_uppercase">brand</span>
+                        <span class="un_select color_cate title_cate dis_block show_plus">+</span>
+                    </div>
+                    <div class="sort">
+                        <span class="un_select color_cate title_cate dis_block text_uppercase">character</span>
+                        <span class="un_select color_cate title_cate dis_block show_plus">+</span>
+                    </div>
+                    <div class="sort">
+                        <span class="un_select color_cate title_cate dis_block text_uppercase">price</span>
+                        <span class="un_select color_cate title_cate dis_block show_plus">+</span>
+                    </div>
+                    <div class="sort">
+                        <span class="un_select color_cate title_cate dis_block text_uppercase">series</span>
+                        <span class="un_select color_cate title_cate dis_block show_plus">+</span>
+                    </div>
+                </aside>
+                <div class="content_product bg-white">
+                    <div class="grid grid-cols-3 gap-8">
+                    ${data.map((product) => `
+                    <div class="column_product">
+                        <div class="img-product">
+                            <a href="/#/products/${product.id}">
+                                <figure style="background-image: url('${product.img}');" class="img-bg"></figure>
+                            </a>
+                        </div>
+                        <div class="details-product dt_pr_1">
+                            <span class="dis_block product-name">${product.name}</span>
+                            <span class="dis_block product-price">$${product.price}</span>
+                            <a href="/#/products/${product.id}" class="add-to-cart">view detail</a>
+                        </div>
+                </div>
+            `).join("")}
+            </div>
+            </div>
+            </main>
+            ${Footer.render()}
         `;
+    },
+    afterRender() {
+        Header.afterRender();
     },
 };
 export default ProductsPage;

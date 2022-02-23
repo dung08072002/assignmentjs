@@ -5,6 +5,7 @@ import AddPost from "./pages/AdminAddPost";
 import AdminEditPost from "./pages/AdminEditPost";
 import AdminProduct from "./pages/AdminProduct";
 import AddProduct from "./pages/AdminAddProduct";
+import AdminEditProduct from "./pages/AdminEditProduct";
 // MainPage
 import HomePage from "./pages/home";
 import CartPage from "./pages/cart";
@@ -63,5 +64,7 @@ router.on({
     "/admin/news/:id/edit": ({ data }) => print(AdminEditPost, data.id),
     "/admin/products": () => print(AdminProduct),
     "/admin/products/add": () => print(AddProduct),
+    "/admin/products/:id/edit": ({ data }) => print(AdminEditProduct, data.id),
+
 });
 router.resolve();

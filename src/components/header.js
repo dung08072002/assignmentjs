@@ -29,7 +29,7 @@ const Header = {
               <a href="/admin/news" class="hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">manage</a>
               <p id="logout" class="cursor-pointer hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">Log out</p>
               ` : `<a href="/signin" class="hover_border_effect_center un_select mg_rl_xx bor_none text_uppercase font_menu ol_none bg_none text_weight_white">sign in</a>
-                   <a href="/signup" class="hover_border_effect_center un_select bor_none text_uppercase font_menu ol_none bg_none text_weight_white">registration</a>`
+                   <a href="/signup" class="hover_border_effect_center un_select bor_none text_uppercase font_menu ol_none bg_none text_weight_white">sign up</a>`
 }
           </div>
       </div>
