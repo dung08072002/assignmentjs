@@ -846,3 +846,7 @@ footer {
     color: #fff;
     font-weight: 600;
 }
+.formSearch {
+    display: flex;
+    align-items: center;
+}
