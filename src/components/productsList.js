@@ -7,7 +7,7 @@ const ProductsList = {
         const { data } = await getAll();
         return /* html */`
             <div class="bg-white p-10">
-            <h1 class="text-4xl font-extrabold">Hot products</h1>
+            <h1 class="text-4xl font-extrabold">Hot Products</h1>
             <div class="grid grid-cols-4 gap-8 my-5">
                 ${data.map((product) => `
                     <div class="column_product">

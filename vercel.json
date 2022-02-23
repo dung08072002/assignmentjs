@@ -17,7 +17,19 @@
             "dest": "/"
         },
         {
-            "src": "/admin/dashboard",
+            "src": "/admin/news",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/news/add",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/products",
+            "dest": "/"
+        },
+        {
+            "src": "/admin/products/add",
             "dest": "/"
         }
     ]
