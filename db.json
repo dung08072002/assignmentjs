@@ -39,98 +39,120 @@
       "id": "UcXhg_K"
     }
   ],
-  "productCates": [],
+  "productCates": [
+    { 
+      "id": "1",
+      "name": "figures"
+    },
+    { 
+      "id": "2",
+      "name": "Apparel"
+    }
+  ],
   "products": [
     {
       "name": "Snowboard Poro Figure",
       "price": "35",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645567215/mjxxwhfkwif4b31po1ew.png",
       "desc": "Bomb down the slope with the Snowboarder Poro figure and their trusty board.",
-      "id": "CEFVPoh"
+      "id": "CEFVPoh",
+      "productCateId": 1
     },
     {
       "id": "e3WcDi_",
       "name": "Myethos Jinx 1/7 Scale Figure",
       "price": "196",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645569720/vkpcldu3ud0ijt8hocul.png",
-      "desc": "Wreak havoc on Piltover with Jinx, the Loose Cannon. There's no such thing as a boring day when you have your best friends Pow-Pow and Fishbones."
+      "desc": "Wreak havoc on Piltover with Jinx, the Loose Cannon. There's no such thing as a boring day when you have your best friends Pow-Pow and Fishbones.",
+      "productCateId": 1
     },
     {
       "name": "Firecracker Teemo Hoodie (Unisex)",
       "price": "95",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645569775/qaentu0rlpxga4j8clrs.png",
       "desc": "Firecracker Teemo has an explosively delicious present for you (be warned - it's probably full of mushrooms!) Show off your love for Teemo and bring luck to your new year with this super comfy hoodie.",
-      "id": "dQIeJvX"
+      "id": "dQIeJvX",
+      "productCateId": 2
     },
     {
       "name": "Firecracker Teemo Figure",
       "price": "35",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572025/huloxgzwoo3zxwyfj3kw.png",
       "desc": "The adorable and fiesty Firecracker Teemo is ready to lead you into a wonderful new year. This is a Limited Edition figure, so don't miss out!",
-      "id": "4nS2Z3_"
+      "id": "4nS2Z3_",
+      "productCateId": 1
     },
     {
       "name": "Sugar Rush Poro Figure",
       "price": "35",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572083/ye1oxf19x5sl3dovuv7b.png",
       "desc": "Your love has summoned the fluffy and adorable Sugar Rush Poro Figure - alongside his tiny yet adorable Sweetheart Tibbers companion.",
-      "id": "aGO84fF"
+      "id": "aGO84fF",
+      "productCateId": 1
     },
     {
       "name": "Saki and Riku Plush Set",
       "price": "40",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572150/bsxzmhxshbwytvnrierr.png",
       "desc": "Even though Star Guardian Rakan and Xayah have been corrupted, their familiars will never leave their side.",
-      "id": "3l5aEqC"
+      "id": "3l5aEqC",
+      "productCateId": 1
     },
     {
       "name": "VALORANT Sage Longsleeve Tee (Unisex)",
       "price": "50",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572348/r0jjzi4tzcibcqofgtay.png",
       "desc": "Enter your email below to get notified when this product is back in stock!",
-      "id": "YZ-WQCY"
+      "id": "YZ-WQCY",
+      "productCateId": 2
     },
     {
       "name": "VALORANT Killjoy Longsleeve Tee (Unisex)",
       "price": "50",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572385/gcht9znkws1myo5hzgjk.png",
       "desc": "\"Ah, my genius doesn't stop in the lab.\"",
-      "id": "Xntnto0"
+      "id": "Xntnto0",
+      "productCateId": 2
     },
     {
       "name": "VALORANT Omen Longsleeve Tee (Unisex)",
       "price": "50",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572459/lnqthg3uqbgo5mibmkt8.png",
       "desc": "\"You thought you could escape my nightmare?!\"",
-      "id": "q78oWf9"
+      "id": "q78oWf9",
+      "productCateId": 2
     },
     {
       "name": "BE@RBRICK Jinx 100% & 400%",
       "price": "120",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572601/sxnkfpkngmfwlso0yyln.png",
       "desc": "\"Let's just behave... said no one, ever.\"  The Loose Cannon's mayhem is brought to life in this Limited Edition BE@RBRICK.",
-      "id": "tl7IZxC"
+      "id": "tl7IZxC",
+      "productCateId": 1
     },
     {
       "name": "Storm Dragon Lee Sin Figure",
       "price": "30",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572678/semthzhxl5rvtdvdr3pw.png",
       "desc": "\"I will master the dragon's spirit, or die trying.\"",
-      "id": "bTmrl5q"
+      "id": "bTmrl5q",
+      "productCateId": 1
     },
     {
       "name": "Cho'Gath Team Mini",
       "price": "12",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572754/iii0q4zekja59v27dajn.png",
       "desc": "Limited Edition Cho'Gath will feast upon the world and feed the souls to the Void.",
-      "id": "soJydlf"
+      "id": "soJydlf",
+      "productCateId": 1
     },
     {
       "name": "Immortal Journey Irelia & Talon DUO Figures",
       "price": "55",
       "img": "http://res.cloudinary.com/assigmentjsweb501/image/upload/v1645572860/vb4yrlbxazgqxh7p7yaa.png",
       "desc": "The epic duel between these two are now available as #01 in Series 4.",
-      "id": "4It-jdl"
+      "id": "4It-jdl",
+      "productCateId": 1
     }
   ],
   "users": [

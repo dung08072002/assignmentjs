@@ -19,7 +19,7 @@ const ProductsList = {
                     <div class="details-product dt_pr_1">
                         <span class="dis_block product-name">${product.name}</span>
                         <span class="dis_block product-price">$${product.price}</span>
-                        <a href="#" class="add-to-cart">Add to cart</a>
+                        <a href="/#/products/${product.id}" class="add-to-cart">VIEW DETAIL</a>
                     </div>
                 </div>
                 `).join("")}
