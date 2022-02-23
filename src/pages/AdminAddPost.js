@@ -12,7 +12,7 @@ const AddPost = {
             <div class="logo_content">
                 <div class="logo">
                     <i class="fab fa-dyalog"></i>
-                    <div class="logo_name text_uppercase">Daxua</div>
+                    <div class="logo_name text_uppercase">Dungnv</div>
                 </div>
                 <i class="fas fa-bars" id="btn"></i>
             </div>

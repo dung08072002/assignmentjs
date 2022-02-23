@@ -9,6 +9,7 @@ import AdminEditProduct from "./pages/AdminEditProduct";
 // MainPage
 import HomePage from "./pages/home";
 import CartPage from "./pages/cart";
+import ProductCate from "./pages/productCates";
 // News
 import NewsPage from "./pages/news";
 import DetailNewsPage from "./pages/detailNews";
@@ -51,6 +52,7 @@ router.on({
     "/signup": () => print(Signup),
     "/signin": () => print(Signin),
     "/cart": () => print(CartPage),
+    "/:name/:id": ({ data }) => print(ProductCate, data.id),
     // News
     "/news": () => print(NewsPage),
     "/news/:id": ({ data }) => print(DetailNewsPage, data.id),

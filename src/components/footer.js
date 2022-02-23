@@ -5,7 +5,7 @@ const Footer = {
         <div class="logo_content">
             <div class="logo al_i_center">
                 <i class="fab fa-dyalog"></i>
-                <div class="font_menu text_uppercase text_weight_white un_select">Daxua</div>
+                <div class="font_menu text_uppercase text_weight_white un_select">Dungnv</div>
             </div>
         </div>
         <div>
