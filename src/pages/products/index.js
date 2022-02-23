@@ -1,7 +1,10 @@
+/* eslint-disable import/no-named-as-default */
 import { getAll } from "../../api/products";
 import Header from "../../components/header";
 import Banner from "../../components/banner";
 import Footer from "../../components/footer";
+import reRender from "../../utils/rerender";
+import { search } from "../../utils";
 
 const ProductsPage = {
     async render() {
@@ -15,6 +18,10 @@ const ProductsPage = {
             </div>
             <main class="content">
                 <aside class="category">
+                    <!-- <form action="" id="search" class="w-full">
+                        <input type="text" id="name" class = "w-full border border-black rounded-xl px-3 py-1" placeholder = "Search..." autocomplete="off">
+                        <button class="h-5 w-5"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>  -->
                     <h5 class="un_select color_cate title_cate text_uppercase">category</h5>
                     <ul>
                         <li class="mg_tb-10"><a class="un_select font_weight500 color_cate text_cate text_cap" href="#">figures</a></li>
@@ -59,8 +66,16 @@ const ProductsPage = {
             ${Footer.render()}
         `;
     },
-    afterRender() {
+    async afterRender() {
         Header.afterRender();
+        const { data } = await getAll();
+        const formSearch = document.querySelector("#search");
+        formSearch.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = document.querySelector("#name").value;
+            // search(data, name);
+            reRender(ProductsPage, "#app", search(data, name));
+        });
     },
 };
 export default ProductsPage;
