@@ -6,7 +6,7 @@ import Footer from "../../components/footer";
 import { getAllCates } from "../../api/productcates";
 import formSearch from "../../components/formSearchProduct";
 
-const ProductsPage = {
+const SearchProductsPage = {
     async render() {
         const { data } = await getAll();
         const cate = await getAllCates();
@@ -69,4 +69,4 @@ const ProductsPage = {
         Header.afterRender();
     },
 };
-export default ProductsPage;
+export default SearchProductsPage;

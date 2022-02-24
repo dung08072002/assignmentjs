@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Banner from "../components/banner";
 import { getAllCates, getByCate } from "../api/productcates";
+import formSearch from "../components/formSearchProduct";
 
 const ProductCate = {
     async render(id) {
@@ -17,12 +18,7 @@ const ProductCate = {
             </div>
             <main class="content">
                 <aside class="category">
-                    <form action="" id="search" class="w-full">
-                        <div class="formSearch">
-                        <input type="text" id="name" class = "w-full border border-black rounded-xl px-3 py-1" placeholder = "Search..." autocomplete="off">
-                        <button class="h-5 w-5 btn-search-pro"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                    </form>
+                    ${formSearch.render()}
                     <h5 class="un_select color_cate title_cate text_uppercase">category</h5>
                     <ul>
                     ${cate.data.map((item) => `

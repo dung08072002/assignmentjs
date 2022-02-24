@@ -9,13 +9,14 @@ import AdminEditProduct from "./pages/AdminEditProduct";
 // MainPage
 import HomePage from "./pages/home";
 import CartPage from "./pages/cart";
-import ProductCate from "./pages/productCates";
 // News
 import NewsPage from "./pages/news";
 import DetailNewsPage from "./pages/detailNews";
 // Products
 import ProductsPage from "./pages/products";
 import DetailProductsPage from "./pages/products/detail";
+import ProductCate from "./pages/productCates";
+// import SearchProductsPage from "./pages/products/productsSearch";
 // Signin & signup
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
@@ -52,13 +53,13 @@ router.on({
     "/signup": () => print(Signup),
     "/signin": () => print(Signin),
     "/cart": () => print(CartPage),
-    "/:name/:id": ({ data }) => print(ProductCate, data.id),
     // News
     "/news": () => print(NewsPage),
     "/news/:id": ({ data }) => print(DetailNewsPage, data.id),
     // Products
     "/products": () => print(ProductsPage),
     "/products/:id": ({ data }) => print(DetailProductsPage, data.id),
+    "/:name/:id": ({ data }) => print(ProductCate, data.id),
     // Champions
     // Admin
     "/admin/news": () => print(AdminPost),
