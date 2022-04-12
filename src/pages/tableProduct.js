@@ -24,7 +24,7 @@ const TableProduct = {
     afterRender() {
         const buttons = document.querySelectorAll(".btn");
         buttons.forEach((btn) => {
-            const { id } = btn.dataset;
+            const id = btn.dataset;
             btn.addEventListener("click", () => {
                 const confirm = window.confirm("Bạn có muốn xóa sản phẩm này không ?");
                 if (confirm) {

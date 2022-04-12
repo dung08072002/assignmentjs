@@ -46,21 +46,21 @@ const ProductsPage = {
                 <div class="content_product bg-white">
                     <div class="grid grid-cols-3 gap-8">
                     ${data.map((product) => `
-                    <div class="column_product">
-                        <div class="img-product">
-                            <a href="/#/products/${product.id}">
-                                <figure style="background-image: url('${product.img}');" class="img-bg"></figure>
-                            </a>
+                        <div class="column_product">
+                            <div class="img-product">
+                                <a href="/#/products/${product.id}">
+                                    <figure style="background-image: url('${product.img}');" class="img-bg"></figure>
+                                </a>
+                            </div>
+                            <div class="details-product dt_pr_1">
+                                <span class="dis_block product-name">${product.name}</span>
+                                <span class="dis_block product-price">$${product.price}</span>
+                                <a href="/#/products/${product.id}" class="add-to-cart">view detail</a>
+                            </div>
                         </div>
-                        <div class="details-product dt_pr_1">
-                            <span class="dis_block product-name">${product.name}</span>
-                            <span class="dis_block product-price">$${product.price}</span>
-                            <a href="/#/products/${product.id}" class="add-to-cart">view detail</a>
-                        </div>
-                </div>
             `).join("")}
-            </div>
-            </div>
+                    </div>
+                </div>
             </main>
             ${Footer.render()}
         `;
